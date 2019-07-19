@@ -1,0 +1,397 @@
+User Table :
+
+db.user.insert([
+	{
+		"u_id" : 1,
+		"name" : "anagha",
+		"contact_no" : 9527716412
+	},
+	{
+		"u_id" : 2,
+		"name" : "shweta",
+		"contact_no" : 9527316442
+	},
+	{
+		"u_id" : 3,
+		"name" : "shweta",
+		"contact_no" : 8827316442
+	}
+]);
+
+==============================================================================
+Assignments Table :
+
+db.assignments.insert([
+	{
+		"assign_id" : 1,
+		"course_id" : 1,
+		"assign_name" : "assignment on java"
+	},
+	{
+		"assign_id" : 2,
+		"course_id" : 1,
+		"assign_name" : "assignment on java - 2"
+	},
+	{
+		"assign_id" : 3,
+		"course_id" : 3,
+		"assign_name" : "python assignment-1"
+	},
+	{
+		"assign_id" : 4,
+		"course_id" : 2,
+		"assign_name" : "machine learning assignment-1"
+	},
+	{
+		"assign_id" : 5,
+		"course_id" : 2,
+		"assign_name" : "machine learning assignment-2"
+	} 
+]);
+
+================================================================================
+Course Table :
+
+db.course.insert([
+	{
+		"course_id" : 1,
+		"course_name" : "java"
+	},
+	{
+		"course_id" : 2,
+		"course_name" : "machine learning"
+	},
+	{
+		"course_id" : 3,
+		"course_name" : "python"
+	}
+
+]);
+
+=================================================================================
+Qustions Table :
+
+db.qustions.insert([
+	{
+		"qus_id" : 1,
+		"qus_stmt" : "what is java ?"
+	},
+	{
+		"qus_id" : 2,
+		"qus_stmt" : "what is python ?"
+	},
+	{
+		"qus_id" : 3,
+		"qus_stmt" : "what is machine learning ?"
+	},
+	{
+		"qus_id" : 4,
+		"qus_stmt" : "Which of the following is true about inheritance in Java?"
+	},
+	{
+		"qus_id" : 5,
+		"qus_stmt" : "How many layers are available in Hibernate architecture?"
+	},
+	{
+		"qus_id" : 6,
+		"qus_stmt" : " Which is a perfect example of runtime polymorphism??"
+	},
+	{
+		"qus_id" : 7,
+		"qus_stmt" : "Which of the package is used to enable interaction with garbage collector?"
+	},
+	{
+		"qus_id" : 8,
+		"qus_stmt" : "Where are these five keywords try, catch, finally, throw, and throws used in?"
+	},
+	{
+		"qus_id" : 10,
+		"qus_stmt" : "Select the reserved keyword in python?"
+	},
+	{
+		"qus_id" : 9,
+		"qus_stmt" : "Which keyword is used to define methods in Python?"
+	},
+	{
+		"qus_id" : 11,
+		"qus_stmt" : " What are the five popular algorithms of Machine Learning??"
+	},
+	{
+		"qus_id" : 12,
+		"qus_stmt" : "Which of the following statement is true in following case?"
+	},
+	{
+		"qus_id" : 13,
+		"qus_stmt" : " Which of the following hyper parameter(s), when increased may cause random forest to over fit the data? "
+	},
+	{
+		"qus_id" : 14,
+		"qus_stmt" : " What would you do in PCA to get the same projection as SVD?"
+	},
+	{
+		"qus_id" : 15,
+		"qus_stmt" : "Which of the following function provides unsupervised prediction ?"
+	}
+
+]);
+
+==================================================================================
+Answer Table :
+
+db.answers.insert([
+	{
+		"ans_id" : 1,
+		"qus_id" : 1,
+		"ans_option" : "1. object oriented, 2. procedure oriented",
+		"correct_ans" : "1. object oriented"
+	},
+	{
+		"ans_id" : 2,
+		"qus_id" : 2,
+		"ans_option" : "1. object oriented, 2. procedure oriented",
+		"correct_ans" : "1. object oriented"
+	},
+	{
+		"ans_id" : 3,
+		"qus_id" : 3,
+		"ans_option" : "1. programming language, 2. application of artificial intelligence, 3. application of neural network, 4. all above",
+		"correct_ans" : "2. application of artificial intelligence"
+	},
+	{
+		"ans_id" : 4,
+		"qus_id" : 4,
+		"ans_option" : "1.Private methods are final, 2.  Protected members are accessible within a package, 3. Protected methods are final., 4. We cannot override private methods. ",
+		"correct_ans" : " 1 ,2 and 4"
+	},
+	{
+		"ans_id" : 5,
+		"qus_id" : 5,
+		"ans_option" : "1. three, 2. four, 3. five, 4.two",
+		"correct_ans" : "3. five"
+	},
+	{
+		"ans_id" : 6,
+		"qus_id" : 6,
+		"ans_option" : "1. Method overloading, 2.Method overriding, 3. Constructor overloading, 4. all above",
+		"correct_ans" : "4. all above"
+	},
+	{
+		"ans_id" : 7,
+		"qus_id" : 7,
+		"ans_option" : "1. java.lang.ref, 2. java.lang.reflect,3. java.lang,4. java.awt",
+		"correct_ans" : "1. java.lang.ref"
+	},
+	{
+		"ans_id" : 8,
+		"qus_id" : 8,
+		"ans_option" : "1. Exception Handling, 2. String Handling, 3. Event Handling, 4. None of the above",
+		"correct_ans" : "1. exception handling"
+	},
+	{
+		"ans_id" : 9,
+		"qus_id" : 9,
+		"ans_option" : "1. function, 2. def, 3. method",
+		"correct_ans" : "2. def"
+	},
+	{
+		"ans_id" : 10,
+		"qus_id" : 10,
+		"ans_option" : "1. else, 2.import, 3. raise, 4. all of above",
+		"correct_ans" : "4. all"
+	},
+	{
+		"ans_id" : 11,
+		"qus_id" : 11,
+		"ans_option" : "1.apriori, 2.k-means, 3. linear, 4. linear regression, 5. bayes classification, 6. all above",
+		"correct_ans" : "6. all above"
+	},
+	{
+		"ans_id" : 12,
+		"qus_id" : 12,
+		"ans_option" : "1.Feature F1 is an example of nominal variable, 2. Feature F1 is an example of ordinal variable ,3.  It doesn’t belong to any of the above category ,4. both",
+		"correct_ans" : "2.  Feature F1 is an example of ordinal variable"
+	},
+	{
+		"ans_id" : 13,
+		"qus_id" : 13,
+		"ans_option" : "1., 2.Depth of Tree, 3.Learning Rate",
+		"correct_ans" : "2. depth of tree"
+	},
+	{
+		"ans_id" : 14,
+		"qus_id" : 14,
+		"ans_option" : "1. Transform data to zero mean, 2.Transform data to zero median, 3.Not possible, 4. none",
+		"correct_ans" : "1. Transform data to zero mean"
+	},
+	{
+		"ans_id" : 15,
+		"qus_id" : 15,
+		"ans_option" : "1. cl_forecast, 2. cl_nowcast, 3. cl_precast, 4. None of the Mentioned",
+		"correct_ans" : "4. none of the Mentiones"
+	}
+
+]);
+
+==================================================================================
+assignment_qustions_details Table :
+
+db.assignment_qustions_details.insert([
+	{
+		"aq_id" : 1,
+		"assign_id" : 1,
+		"qus_id" : 1
+	},
+	{
+		"aq_id" : 2,
+		"assign_id" : 1,
+		"qus_id" : 4
+	},
+	{
+		"aq_id" : 3,
+		"assign_id" : 1,
+		"qus_id" : 6
+	},
+	{
+		"aq_id" : 4,
+		"assign_id" : 2,
+		"qus_id" : 5
+	},
+	{
+		"aq_id" : 5,
+		"assign_id" : 2,
+		"qus_id" : 7
+	},
+	{
+		"aq_id" : 7,
+		"assign_id" : 3,
+		"qus_id" : 9
+	},
+	{
+		"aq_id" : 8,
+		"assign_id" : 3,
+		"qus_id" : 10
+	},
+	{
+		"aq_id" : 9,
+		"assign_id" : 4,
+		"qus_id" : 15
+	},
+	{
+		"aq_id" : 11,
+		"assign_id" : 3,
+		"qus_id" : 8
+	},
+	{
+		"aq_id" : 6,
+		"assign_id" : 3,
+		"qus_id" : 2
+	},
+	{
+		"aq_id" : 10,
+		"assign_id" : 4,
+		"qus_id" : 3
+	},
+	{
+		"aq_id" : 12,
+		"assign_id" : 4,
+		"qus_id" : 11
+	},
+	{
+		"aq_id" : 13,
+		"assign_id" : 5,
+		"qus_id" : 12
+	},
+	{
+		"aq_id" : 14,
+		"assign_id" : 5,
+		"qus_id" : 13
+	},
+	{
+		"aq_id" : 15,
+		"assign_id" : 5,
+		"qus_id" : 14
+	}
+
+]);
+
+=================================================================================
+user_course_details Table :
+
+db.user_course_details.insert([
+	{
+		"uc_id" : 1,
+		"c_id" : 1,
+		"u_id" : 1
+	},
+	{
+		"uc_id" : 2,
+		"c_id" : 2,
+		"u_id" : 1
+	},
+	{
+		"uc_id" : 3,
+		"c_id" : 3,
+		"u_id" : 2
+	},
+	{
+		"uc_id" : 4,
+		"c_id" : 2,
+		"u_id" : 2
+	},
+	{
+		"uc_id" : 5,
+		"c_id" : 1,
+		"u_id" : 3
+	},
+	{
+		"uc_id" : 6,
+		"c_id" : 3,
+		"u_id" : 3
+	}
+]);
+
+=================================================================================
+user_assignments_details  Table :
+
+db.user_assignments_details.insert([
+	{
+		"ua_id" : 1,
+		"u_id" : 1,
+		"course_id" : 1,
+		"assign_id" : 1,
+		"qus_id" : 1,
+		"ans_id" : 1,
+		"user_ans" : "1. object oriented"
+	},
+	{
+		"ua_id" : 2,
+		"u_id" : 1,
+		"course_id" : 1,
+		"assign_id" : 1,
+		"qus_id" : 4,
+		"ans_id" : 4,
+		"user_ans" : "1 ,2 and 4"
+	},
+	{
+		"ua_id" : 3,
+		"u_id" : 1,
+		"course_id" : 1,
+		"assign_id" : 1,
+		"qus_id" : 6,
+		"ans_id" : 6,
+		"user_ans" : "4. all above"
+	}
+	
+]);
+
+=================================================================
+
+Queries :
+
+1) Courses belongs to user
+
+==> db.user_course_details.aggregate([{$lookup: {from: "course", localField: "c_id", foreignField: "course_id", as: "course_name"}},{$match : {u_id : 1}}]);
+
+2) How many questions assignment of course user answered
+
+==> db.user_assignments_details.aggregate([{$match : {$and: [{u_id : 1},{course_id : 1},{ assign_id : 1 }]}}, { $group:{ _id: ObjectId("5d2d6ed9eb2843ce6cce097f"), count_of_qus: {$sum : 1} }}]);
