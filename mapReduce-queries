@@ -1,0 +1,26 @@
+mapReduce Assignment :
+
+actual value = 
+
+db.target_records.mapReduce(function(){
+        emit(this.sys_fin_year,this.actual_value);
+     },
+function(key,values){        
+			var total = 0;      
+			for(i in values) {
+						 var k = Number(values[i]); 
+						 total = total + k};        
+						 return total;      
+		   },
+{out: {inline : 1}})
+
+target value = 
+
+db.target_records.mapReduce(function(){
+        emit(this.sys_fin_year,this.target_value);
+     },function(key,values){
+        var total = 0;
+        for(i in values) {total+=values[i]};
+        return total;
+     },
+{out:{inline : 1}})
