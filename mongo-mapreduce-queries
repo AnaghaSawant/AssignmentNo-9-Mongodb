@@ -48,3 +48,38 @@ db.target_records.mapReduce(function(){
      },
 {out:{inline : 1}})
 
+=======================================================================
+calculation on deviation =
+
+var mapFunction = function(){
+	key = this.sys_fin_year;
+	value = {
+			sys_indicator_name: this.sys_indicator_name,
+			Target: this.target_value,
+			Performance: this.actual_value		
+                 }
+	emit(key, value);
+}
+
+
+var reduceFunction = function(key, values){
+	target_total = 0;
+	actual_total = 0;
+	reducedValue = {
+				sys_indicator_name: "0",
+				Target: 0,
+				Performance: 0,
+				Deviation: 0
+			}
+	for(var i = 0; i<= values.length - 1; i++){
+		reducedValue.sys_indicator_name = values[i].sys_indicator_name;
+		target_total = target_total + values[i].Target;
+		reducedValue.Target = target_total;
+		actual_total = actual_total + Number(values[i].Performance);
+		reducedValue.Performance = actual_total;
+		reducedValue.Deviation =  reducedValue.Performance - reducedValue.Target;
+	}
+	return reducedValue;
+}
+
+db.target_records.mapReduce(mapFunction,reduceFunction,{out : {inline: 1}})
